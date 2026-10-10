@@ -110,8 +110,18 @@ def depthFirstSearch(problem: SearchProblem):
 
 def breadthFirstSearch(problem: SearchProblem):
     """Search the shallowest nodes in the search tree first."""
-    "*** YOUR CODE HERE ***"
-    util.raiseNotDefined()
+    start = problem.getStartState()
+
+    fringe = util.Queue()
+    fringe.push((start, []))
+
+    visited = {start}
+
+    if problem.isGoalState(start):
+        return []
+
+    # Stage 2 will add the BFS exploration loop and successor processing here.
+    return []
 
 def uniformCostSearch(problem: SearchProblem):
     """Search the node of least total cost first."""
