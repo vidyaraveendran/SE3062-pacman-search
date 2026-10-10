@@ -133,7 +133,7 @@ class EightPuzzleState:
             newrow = row
             newcol = col + 1
         else:
-            raise "Illegal Move"
+            raise ValueError("Illegal Move")
 
         # Create a copy of the current eightPuzzle
         newPuzzle = EightPuzzleState([0, 0, 0, 0, 0, 0, 0, 0, 0])
@@ -196,7 +196,7 @@ class EightPuzzleSearchProblem(search.SearchProblem):
         self.puzzle = puzzle
 
     def getStartState(self):
-        return puzzle
+        return self.puzzle
 
     def isGoalState(self,state):
         return state.isGoal()
