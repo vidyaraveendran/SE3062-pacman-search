@@ -86,11 +86,41 @@ returns **3/3**. On `bigMaze` with `manhattanHeuristic` the path cost is **210**
 
 ---
 
-## 4. Prompt record — Thavaruban (Member B)
+## AI Usage Declaration — Thavaruban
 
-**Assigned questions:** Q2 — Breadth First Search · Q6 — cornersHeuristic
+**Tools Used:** ChatGPT and Codex
 
-*(to be completed by Thavaruban)*
+### ChatGPT — Conceptual Understanding and Planning
+
+ChatGPT was used to understand the theoretical concepts behind Breadth-First Search (BFS) and the Corners Heuristic, including their working principles, admissibility, consistency, and development planning.
+
+**Representative prompt summaries**
+
+1. Explain how Breadth-First Search works in Pac-Man and why a FIFO queue is used.
+2. Explain the role of visited states in BFS and how they prevent repeated exploration.
+3. Explain the difference between BFS and A* Search.
+4. Explain admissibility and consistency in heuristic search.
+5. Explain how Manhattan distance can estimate the remaining cost of visiting all unvisited corners.
+6. Explain why evaluating different corner-visiting orders can improve heuristic performance.
+
+### Codex — Implementation and Code Review
+
+Codex was used to assist with implementing, reviewing, and testing the BFS algorithm and Corners Heuristic.
+
+**Representative prompt summaries:**
+
+1. Inspect the existing Pac-Man search project and identify the BFS implementation requirements.
+2. Implement BFS using a FIFO queue and visited-state tracking.
+3. Review the BFS implementation for correctness and unnecessary state exploration.
+4. Inspect the existing CornersProblem state representation and plan the Corners Heuristic implementation.
+5. Implement the Corners Heuristic using Manhattan distance and permutations of remaining corners.
+6. Review the heuristic for admissibility, consistency, and compatibility with A* Search.
+7. Run the relevant autograder tests and report correctness and node-expansion results.
+
+### Declaration
+
+ChatGPT was used for conceptual understanding and development planning. Codex was used for code implementation, review, and testing. The final implementations were reviewed and verified using the provided project autograder.
+
 
 ---
 
