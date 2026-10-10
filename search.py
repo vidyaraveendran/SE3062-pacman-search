@@ -120,7 +120,14 @@ def breadthFirstSearch(problem: SearchProblem):
     if problem.isGoalState(start):
         return []
 
-    # Stage 2 will add the BFS exploration loop and successor processing here.
+    while not fringe.isEmpty():
+        state, actions = fringe.pop()
+
+        if problem.isGoalState(state):
+            return actions
+
+        # TODO: Stage 3 will generate and enqueue unvisited successors here.
+
     return []
 
 def uniformCostSearch(problem: SearchProblem):
