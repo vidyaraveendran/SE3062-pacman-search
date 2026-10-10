@@ -126,7 +126,10 @@ def breadthFirstSearch(problem: SearchProblem):
         if problem.isGoalState(state):
             return actions
 
-        # TODO: Stage 3 will generate and enqueue unvisited successors here.
+        for successor, action, stepCost in problem.getSuccessors(state):
+            if successor not in visited:
+                visited.add(successor)
+                fringe.push((successor, actions + [action]))
 
     return []
 
